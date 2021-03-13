@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/product/totalcost",
+      "launchUrl": "api/promotion/totalcost",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "PromotionEngine.WebApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/product/totalcost",
+      "launchUrl": "api/promotion/totalcost",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

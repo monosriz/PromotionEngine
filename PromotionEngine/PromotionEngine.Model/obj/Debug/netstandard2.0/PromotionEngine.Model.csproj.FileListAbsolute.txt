@@ -1,7 +1,6 @@
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.Model\bin\Debug\netstandard2.0\PromotionEngine.Model.deps.json
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.Model\bin\Debug\netstandard2.0\PromotionEngine.Model.dll
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.Model\bin\Debug\netstandard2.0\PromotionEngine.Model.pdb
-D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.Model\obj\Debug\netstandard2.0\PromotionEngine.Model.csprojAssemblyReference.cache
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.Model\obj\Debug\netstandard2.0\PromotionEngine.Model.AssemblyInfoInputs.cache
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.Model\obj\Debug\netstandard2.0\PromotionEngine.Model.AssemblyInfo.cs
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.Model\obj\Debug\netstandard2.0\PromotionEngine.Model.csproj.CoreCompileInputs.cache

@@ -14,13 +14,13 @@ namespace PromotionEngine.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductController : ControllerBase
+    public class PromotionController : ControllerBase
     {
         List< Product> _products;
         List<Promotion> _promotions;
         ApplicationPriceCalculatorService _applicationPriceCalculatorService;
         
-        public ProductController(List<Product> products, List<Promotion> promotions, ApplicationPriceCalculatorService applicationPriceCalculatorService)
+        public PromotionController(List<Product> products, List<Promotion> promotions, ApplicationPriceCalculatorService applicationPriceCalculatorService)
         {
             _applicationPriceCalculatorService = applicationPriceCalculatorService;
             _products = products;
