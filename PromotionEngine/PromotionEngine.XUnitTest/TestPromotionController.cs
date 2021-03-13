@@ -16,6 +16,7 @@ namespace PromotionEngine.XUnitTest
     {
         public HttpClient Client { get; }
 
+
         public TestPromotionController(WebApplicationFactory<WebApi.Startup> fixture)
         {
             Client = fixture.CreateClient();
