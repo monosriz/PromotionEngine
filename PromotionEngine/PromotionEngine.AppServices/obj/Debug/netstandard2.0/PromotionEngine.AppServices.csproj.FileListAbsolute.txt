@@ -7,3 +7,6 @@ D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.AppServices
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.AppServices\obj\Debug\netstandard2.0\PromotionEngine.AppServices.dll
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.AppServices\obj\Debug\netstandard2.0\PromotionEngine.AppServices.pdb
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.AppServices\obj\Debug\netstandard2.0\PromotionEngine.AppServices.csprojAssemblyReference.cache
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.AppServices\bin\Debug\netstandard2.0\PromotionEngine.Model.dll
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.AppServices\bin\Debug\netstandard2.0\PromotionEngine.Model.pdb
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.AppServices\obj\Debug\netstandard2.0\PromotionEngine.AppServices.csproj.CopyComplete

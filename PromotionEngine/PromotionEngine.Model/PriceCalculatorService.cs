@@ -6,17 +6,18 @@ using System.Linq;
 
 namespace PromotionEngine.Model
 {
-    public class PriceCalculator
+    public class PriceCalculatorService
     {
 
 
+        public bool Status { get; set; }
 
 
 
-        private decimal GetTotalPrice(List<Product> products, List<Promotion> promotions, List<ProductOrder> productsorders)
+        public decimal GetTotalPrice(List<Product> products, List<Promotion> promotions, List<ProductOrder> productsorders)
         {
             decimal totalCost = 0;
-
+        
             products.All(p => {
 
             totalCost+= SingleProductPrice(p, productsorders.Count(PO => PO.Id == p.Id), promotions.Find(pm => pm.ProductID == p.Id));
@@ -30,16 +31,17 @@ namespace PromotionEngine.Model
         }
 
 
-        public decimal SingleProductPrice(Product product, int noofProduct, Promotion promotion)
+        private decimal SingleProductPrice(Product product, int noofProduct, Promotion promotion)
         {
            
             if(promotion!=null)
                 return (noofProduct / promotion.Quantity) * promotion.DiscountPrice + (noofProduct % promotion.Quantity * product.Price);
             else
                 return noofProduct * product.Price;
+          
         }
 
-        public void MutipleProductPrice()
+        private void MutipleProductPrice()
         {
 
         }

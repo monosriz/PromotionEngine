@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "PromotionEngine.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/PromotionEngine.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PromotionEngine.Model.dll": {}
+        }
       }
     }
   },
@@ -172,11 +182,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "PromotionEngine.Model/1.0.0": {
+      "type": "project",
+      "path": "../PromotionEngine.Model/PromotionEngine.Model.csproj",
+      "msbuildProject": "../PromotionEngine.Model/PromotionEngine.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "PromotionEngine.Model >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -205,7 +221,11 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\SourceCode\\Maersk\\PromotionEngine\\PromotionEngine\\PromotionEngine.Model\\PromotionEngine.Model.csproj": {
+              "projectPath": "D:\\SourceCode\\Maersk\\PromotionEngine\\PromotionEngine\\PromotionEngine.Model\\PromotionEngine.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
