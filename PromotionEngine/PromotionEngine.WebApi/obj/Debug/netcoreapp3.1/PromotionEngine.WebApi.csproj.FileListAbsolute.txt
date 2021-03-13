@@ -18,3 +18,8 @@ D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\obj\
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\obj\Debug\netcoreapp3.1\PromotionEngine.WebApi.pdb
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\obj\Debug\netcoreapp3.1\PromotionEngine.WebApi.genruntimeconfig.cache
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\obj\Debug\netcoreapp3.1\PromotionEngine.WebApi.csprojAssemblyReference.cache
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\bin\Debug\netcoreapp3.1\PromotionEngine.AppServices.dll
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\bin\Debug\netcoreapp3.1\PromotionEngine.Model.dll
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\bin\Debug\netcoreapp3.1\PromotionEngine.AppServices.pdb
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\bin\Debug\netcoreapp3.1\PromotionEngine.Model.pdb
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\obj\Debug\netcoreapp3.1\PromotionEngine.WebApi.csproj.CopyComplete

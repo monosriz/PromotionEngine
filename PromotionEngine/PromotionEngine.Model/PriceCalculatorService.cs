@@ -20,10 +20,15 @@ namespace PromotionEngine.Model
         
             products.All(p => {
 
-            totalCost+= SingleProductPrice(p, productsorders.Count(PO => PO.Id == p.Id), promotions.Find(pm => pm.ProductID == p.Id));
+           if(productsorders.Find(PO => PO.Id == p.Id)!=null)
+            { 
+            totalCost+= SingleProductPrice(p, productsorders.Find(PO => PO.Id == p.Id).Quantity, promotions.Find(pm => pm.ProductID == p.Id));
                 return true;
+            }
+                return false;
+               
             });
-
+            
 
             return totalCost;
 
@@ -38,7 +43,7 @@ namespace PromotionEngine.Model
                 return (noofProduct / promotion.Quantity) * promotion.DiscountPrice + (noofProduct % promotion.Quantity * product.Price);
             else
                 return noofProduct * product.Price;
-          
+            
         }
 
         private void MutipleProductPrice()

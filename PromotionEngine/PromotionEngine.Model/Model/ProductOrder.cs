@@ -11,10 +11,5 @@ namespace PromotionEngine.Model.Model
         public int Quantity { get; set; }
 
 
-        public ProductOrder(String id, int  quantity)
-        {
-            this.Id = id;
-            this.Quantity = quantity;
-        }
     }
 }

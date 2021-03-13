@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "PromotionEngine.AppServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "PromotionEngine.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PromotionEngine.AppServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PromotionEngine.AppServices.dll": {}
+        }
+      },
+      "PromotionEngine.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/PromotionEngine.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PromotionEngine.Model.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PromotionEngine.AppServices/1.0.0": {
+      "type": "project",
+      "path": "../PromotionEngine.AppServices/PromotionEngine.AppServices.csproj",
+      "msbuildProject": "../PromotionEngine.AppServices/PromotionEngine.AppServices.csproj"
+    },
+    "PromotionEngine.Model/1.0.0": {
+      "type": "project",
+      "path": "../PromotionEngine.Model/PromotionEngine.Model.csproj",
+      "msbuildProject": "../PromotionEngine.Model/PromotionEngine.Model.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "PromotionEngine.AppServices >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Administrator\\.nuget\\packages\\": {}
@@ -33,7 +70,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\SourceCode\\Maersk\\PromotionEngine\\PromotionEngine\\PromotionEngine.AppServices\\PromotionEngine.AppServices.csproj": {
+              "projectPath": "D:\\SourceCode\\Maersk\\PromotionEngine\\PromotionEngine\\PromotionEngine.AppServices\\PromotionEngine.AppServices.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

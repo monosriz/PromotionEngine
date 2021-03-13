@@ -9,23 +9,10 @@ namespace PromotionEngine.Model.Model
         
 
 
-        public  Promotion(string productID,int quantity, decimal discountPrice)
-        {
-            this.ProductID = productID;
-            this.Quantity = quantity;
-            this.DiscountPrice = discountPrice;
+       
 
 
-        }
-
-
-        public Promotion(List<char> skus, decimal discountPrice)
-        {
-            this.SKUS = skus;
-            this.DiscountPrice = discountPrice;
-
-
-        }
+       
         public string ProductID
         { get; set; }
         public List<char> SKUS

@@ -9,11 +9,8 @@ namespace PromotionEngine.Model
         public string Id { get; set; }
         public decimal Price { get; set; }
 
-
-        public Product(String id, decimal price)
-        {
-            this.Id = id;
-            this.Price = price;
-        }
+       
+    
+    
     }
 }

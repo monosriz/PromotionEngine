@@ -17,7 +17,7 @@ namespace PromotionEngine.AppServices
         }
         public ProductResponseBase CalculatePrice(List<Product> Products, List<Promotion> Promotions, List<ProductOrder> Productsorders)
         {
-            bool _status = true;
+            
             var _reponse = new ProductResponseBase();
             decimal _totalCost ;
             try
