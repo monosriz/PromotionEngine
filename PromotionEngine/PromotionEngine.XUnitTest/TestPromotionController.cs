@@ -23,7 +23,7 @@ namespace PromotionEngine.XUnitTest
         }
 
         [Fact]
-        public async Task Test_SingleQuanity()
+        public async Task Test_SingleQuanity_SigleProductPromotion()
         {
 
 
