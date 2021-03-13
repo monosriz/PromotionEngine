@@ -15,7 +15,7 @@ namespace PromotionEngine.Model.Model
        
         public string ProductID
         { get; set; }
-        public List<char> SKUS
+        public List<string> ProductIDs
         { get; set; }
         public int Quantity
         { get; set; }

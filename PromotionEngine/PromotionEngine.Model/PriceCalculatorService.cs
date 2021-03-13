@@ -17,18 +17,46 @@ namespace PromotionEngine.Model
         public decimal GetTotalPrice(List<Product> products, List<Promotion> promotions, List<ProductOrder> productsorders)
         {
             decimal totalCost = 0;
-        
-            products.All(p => {
 
-           if(productsorders.Find(PO => PO.Id == p.Id)!=null)
-            { 
-            totalCost+= SingleProductPrice(p, productsorders.Find(PO => PO.Id == p.Id).Quantity, promotions.Find(pm => pm.ProductID == p.Id));
+
+            promotions.All(pm =>
+            {
+
+
+
+
+                if (pm.ProductIDs != null)
+                { 
+                    totalCost += MultiProductPrice(products, productsorders.FindAll(po => pm.ProductIDs.Any(b => po.Id == b)), pm.DiscountPrice);
+                    
+                    productsorders.RemoveAll(po => pm.ProductIDs.Any(b => po.Id == b));
+
+                }
+
+
                 return true;
-            }
-                return false;
-               
             });
-            
+
+
+
+            products.All(p =>
+            {
+
+
+
+
+                if (productsorders.Find(PO => PO.Id == p.Id) != null)
+                {
+
+
+                    totalCost += SingleProductPrice(p, productsorders.Find(PO => PO.Id == p.Id).Quantity, promotions.Find(pm => pm.ProductID == p.Id));
+                    productsorders.Remove(productsorders.Find(PO => PO.Id == p.Id));
+
+
+                }
+                return true;
+
+            });
 
             return totalCost;
 
@@ -38,19 +66,32 @@ namespace PromotionEngine.Model
 
         private decimal SingleProductPrice(Product product, int noofProduct, Promotion promotion)
         {
-           
-            if(promotion!=null)
+
+
+            if (promotion != null)
                 return (noofProduct / promotion.Quantity) * promotion.DiscountPrice + (noofProduct % promotion.Quantity * product.Price);
             else
                 return noofProduct * product.Price;
-            
+
         }
 
-        private void MutipleProductPrice()
+        private decimal MultiProductPrice(List<Product> products, List<ProductOrder> productsorders, decimal discoutPrice)
         {
 
+            decimal cost;
+
+            var minQuanity = productsorders.Min(po => po.Quantity);
+            cost = productsorders.Min(po => po.Quantity) * discoutPrice;
+
+            productsorders.All(po =>
+            {
+                cost +=( po.Quantity - productsorders.Min(Subpo => Subpo.Quantity)) * (products.Find(p => p.Id == po.Id).Price);
+                return true;
+            });
+
+            return cost;
+
+
         }
-
-
     }
 }
