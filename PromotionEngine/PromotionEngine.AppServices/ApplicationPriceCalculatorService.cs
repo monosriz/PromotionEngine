@@ -41,8 +41,8 @@ namespace PromotionEngine.AppServices
 
                 _totalCost = _priceCalculatorService.GetTotalPrice(Products,  Promotions, Productsorders);
 
-                _reponse.Success = true;
-                _reponse.Message = "Prduct calculate Succesfully.";
+                _reponse.Success = _priceCalculatorService.Status;
+                _reponse.Message = _priceCalculatorService.Message;
                 _reponse.TotalCost = _totalCost;
 
             }
