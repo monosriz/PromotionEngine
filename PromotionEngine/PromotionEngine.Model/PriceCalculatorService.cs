@@ -62,6 +62,7 @@ namespace PromotionEngine.Model
 
                 Status = true;
                 Message = "Total cost calculatation done succesfully.";
+
                 
 
             return totalCost;
