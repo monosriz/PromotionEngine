@@ -11,6 +11,7 @@ namespace PromotionEngine.AppServices
     {
         private PriceCalculatorService _priceCalculatorService;
 
+
         public ApplicationPriceCalculatorService(PriceCalculatorService PriceCalculatorService)
         {
             _priceCalculatorService = PriceCalculatorService;
