@@ -16,6 +16,7 @@ namespace PromotionEngine.WebApi.Controllers
     [ApiController]
     public class PromotionController : ControllerBase
     {
+
         List< Product> _products;
         List<Promotion> _promotions;
         ApplicationPriceCalculatorService _applicationPriceCalculatorService;
