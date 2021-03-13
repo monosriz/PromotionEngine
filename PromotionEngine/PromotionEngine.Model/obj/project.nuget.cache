@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "yFZcl3Uar/KNpWA0gnOrR2Q2vBQZcQKIlRmzxSAxRp2aqyZAhOV14MCdUloaOnudjRMMZvtJLPjs4qj5Q6LATA==",
+  "success": true,
+  "projectFilePath": "D:\\SourceCode\\Maersk\\PromotionEngine\\PromotionEngine\\PromotionEngine.Model\\PromotionEngine.Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
