@@ -61,7 +61,7 @@ namespace PromotionEngine.Model
 
 
                 Status = true;
-                Message = "Product calculate Succesfully.";
+                Message = "Total cost calculatation done succesfully.";
                 
 
             return totalCost;
@@ -69,7 +69,7 @@ namespace PromotionEngine.Model
             catch (Exception ex)
             {
                 Status = false;
-                Message = ex.Message;
+                Message ="Failed:- "+ ex.Message;
                 return 0;
             }
 

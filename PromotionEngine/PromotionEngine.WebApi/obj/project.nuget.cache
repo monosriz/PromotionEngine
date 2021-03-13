@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "py7A1KLHu3pw56ZW9NbDiOBpTKPNv0ErxJuVv6nSANRbmSSYDP9omHWvaTrL2J0p4EINtwjJYC59wl3oSHkYcg==",
+  "dgSpecHash": "D6bO180zgPHLm+Y6SfB9brnttCpZ6CjyVde9g8BQqkeZrPeDa3bEPMPnHe7BU/VLLCtt3urWPFNSLgIke7VfUA==",
   "success": true,
   "projectFilePath": "D:\\SourceCode\\Maersk\\PromotionEngine\\PromotionEngine\\PromotionEngine.WebApi\\PromotionEngine.WebApi.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
   "logs": []
 }

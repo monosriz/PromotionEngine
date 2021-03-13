@@ -389,3 +389,7 @@ D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.XUnitTest\b
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.XUnitTest\bin\Debug\netcoreapp3.1\PromotionEngine.WebApi.pdb
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.XUnitTest\bin\Debug\netcoreapp3.1\PromotionEngine.AppServices.pdb
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.XUnitTest\bin\Debug\netcoreapp3.1\PromotionEngine.Model.pdb
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.XUnitTest\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.XUnitTest\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.XUnitTest\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.XUnitTest\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll

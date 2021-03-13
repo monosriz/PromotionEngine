@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using PromotionEngine.AppServices;
 using PromotionEngine.Model;
 using PromotionEngine.Model.Model;
@@ -39,6 +40,31 @@ namespace PromotionEngine.WebApi
             section = Configuration.GetSection("Promotions");
             var Promotions = section.Get<List<Promotion>>();
             services.AddSingleton(Promotions);
+
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Promotion API",
+                    Description = "Get deatils inforamtion about Promotion.",
+
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Monosriz Dutta",
+                        Email = "monosrizdutta@gmail.com",
+
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "Use under LICX",
+
+                    }
+                });
+
+               
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,7 +76,17 @@ namespace PromotionEngine.WebApi
               
             }
 
+            app.UseSwagger(c =>
+            {
+                c.SerializeAsV2 = true;
+            });
 
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Promotion API V1");
+            });
 
 
             app.UseRouting();

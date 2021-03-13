@@ -23,3 +23,8 @@ D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\bin\
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\bin\Debug\netcoreapp3.1\PromotionEngine.AppServices.pdb
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\bin\Debug\netcoreapp3.1\PromotionEngine.Model.pdb
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\obj\Debug\netcoreapp3.1\PromotionEngine.WebApi.csproj.CopyComplete
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\obj\Debug\netcoreapp3.1\PromotionEngine.WebApi.MvcApplicationPartsAssemblyInfo.cs
