@@ -10,10 +10,10 @@ namespace PromotionEngine.Model
         public decimal Price { get; set; }
 
 
-        public Product(String ID, decimal Price)
+        public Product(String id, decimal price)
         {
-            this.Id = ID;
-            this.Price = Price;
+            this.Id = id;
+            this.Price = price;
         }
     }
 }

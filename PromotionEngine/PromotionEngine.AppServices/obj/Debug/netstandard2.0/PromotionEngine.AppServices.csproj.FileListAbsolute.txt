@@ -6,3 +6,4 @@ D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.AppServices
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.AppServices\obj\Debug\netstandard2.0\PromotionEngine.AppServices.csproj.CoreCompileInputs.cache
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.AppServices\obj\Debug\netstandard2.0\PromotionEngine.AppServices.dll
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.AppServices\obj\Debug\netstandard2.0\PromotionEngine.AppServices.pdb
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.AppServices\obj\Debug\netstandard2.0\PromotionEngine.AppServices.csprojAssemblyReference.cache

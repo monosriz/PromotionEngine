@@ -17,3 +17,4 @@ D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\obj\
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\obj\Debug\netcoreapp3.1\PromotionEngine.WebApi.dll
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\obj\Debug\netcoreapp3.1\PromotionEngine.WebApi.pdb
 D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\obj\Debug\netcoreapp3.1\PromotionEngine.WebApi.genruntimeconfig.cache
+D:\SourceCode\Maersk\PromotionEngine\PromotionEngine\PromotionEngine.WebApi\obj\Debug\netcoreapp3.1\PromotionEngine.WebApi.csprojAssemblyReference.cache
