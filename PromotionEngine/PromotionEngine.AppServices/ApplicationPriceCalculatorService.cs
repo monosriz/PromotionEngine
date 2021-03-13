@@ -15,6 +15,13 @@ namespace PromotionEngine.AppServices
         {
             _priceCalculatorService = PriceCalculatorService;
         }
+        /// <summary>
+        /// This methid responsible for Calculate Product Price
+        /// </summary>
+        /// <param name="Products"></param>
+        /// <param name="Promotions"></param>
+        /// <param name="Productsorders"></param>
+        /// <returns></returns>
         public ProductResponseBase CalculatePrice(List<Product> Products, List<Promotion> Promotions, List<ProductOrder> Productsorders)
         {
             

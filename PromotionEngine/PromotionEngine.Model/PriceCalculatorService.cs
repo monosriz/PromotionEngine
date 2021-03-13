@@ -13,17 +13,24 @@ namespace PromotionEngine.Model
         public bool Status { get; set; }
         public string Message { get; set; }
 
-
+        /// <summary>
+        /// Get Total price based on promotion rule
+        /// </summary>
+        /// <param name="products"></param>
+        /// <param name="promotions"></param>
+        /// <param name="productsorders"></param>
+        /// <returns></returns>
         public decimal GetTotalPrice(List<Product> products, List<Promotion> promotions, List<ProductOrder> productsorders)
         {
             decimal totalCost = 0;
 
             try
             { 
+                ///Multi Product Promotion
             promotions.All(pm =>
             {
 
-                if (pm.ProductIDs != null)
+                if (pm.ProductIDs != null && productsorders.FindAll(po => pm.ProductIDs.Any(b => po.Id == b)).Count>1)
                 {
                     totalCost += MultiProductPrice(products, productsorders.FindAll(po => pm.ProductIDs.Any(b => po.Id == b)), pm.DiscountPrice);
 
@@ -35,7 +42,7 @@ namespace PromotionEngine.Model
             });
 
 
-
+                ///Single Product Promotion
             products.All(p =>
             {
 
@@ -68,7 +75,13 @@ namespace PromotionEngine.Model
 
         }
 
-
+        /// <summary>
+        /// Handle Single Product Promotion
+        /// </summary>
+        /// <param name="product"></param>
+        /// <param name="noofProduct"></param>
+        /// <param name="promotion"></param>
+        /// <returns></returns>
         private decimal SingleProductPrice(Product product, int noofProduct, Promotion promotion)
         {
 
@@ -81,7 +94,13 @@ namespace PromotionEngine.Model
 
          
         }
-
+        /// <summary>
+        /// Handle Multiple Product Promotion
+        /// </summary>
+        /// <param name="products"></param>
+        /// <param name="productsorders"></param>
+        /// <param name="discoutPrice"></param>
+        /// <returns></returns>
         private decimal MultiProductPrice(List<Product> products, List<ProductOrder> productsorders, decimal discoutPrice)
         {
 

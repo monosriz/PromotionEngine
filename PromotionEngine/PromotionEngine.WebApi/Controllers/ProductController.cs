@@ -27,12 +27,16 @@ namespace PromotionEngine.WebApi.Controllers
             _promotions = promotions;
         }
 
+        /// <summary>
+        /// Get  Product Cost
+        /// </summary>
+        /// <param name="productorder"></param>
+        /// <returns></returns>
         [HttpPost()]
         [Route("TotalCost")]
         public IActionResult TotalCost([FromBody] List<ProductOrder> productorder)
 
         {
-
 
             ProductResponseBase _response = _applicationPriceCalculatorService.CalculatePrice(_products,_promotions, productorder );
             return Ok(_response);
